@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,13 +10,18 @@ import {Router} from '@angular/router';
 export class LoginComponent implements OnInit {
 
   constructor(
-    private router : Router
+    private router: Router
   ) { }
 
   ngOnInit() {
   }
 
   onLogin(usNm: string, pass: string) {
-    this.router.navigate(['dashboard'])
+    this.router.navigate(['dashboard', usNm], {
+      queryParams: {
+        sessionLgn: 789,
+        lstLgn: 78952
+      }
+    });
   }
 }

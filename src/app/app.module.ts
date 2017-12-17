@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ErrorComponent } from './error/error.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { ProfileComponent } from './dashboard/profile.component';
+import { LogsComponent } from './dashboard/logs.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
     HeaderComponent,
     FooterComponent,
     ErrorComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    ProfileComponent,
+    LogsComponent
   ],
   imports: [
     BrowserModule,
