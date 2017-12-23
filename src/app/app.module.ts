@@ -1,5 +1,7 @@
+import { AuthService } from './dashboard/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -12,6 +14,8 @@ import { ErrorComponent } from './error/error.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { ProfileComponent } from './dashboard/profile.component';
 import { LogsComponent } from './dashboard/logs.component';
+import { FormsComponent } from './forms/forms.component';
+import { TmpDrvnComponent } from './forms/tmp-drvn.component';
 
 
 @NgModule({
@@ -24,13 +28,16 @@ import { LogsComponent } from './dashboard/logs.component';
     ErrorComponent,
     ForgetPasswordComponent,
     ProfileComponent,
-    LogsComponent
+    LogsComponent,
+    FormsComponent,
+    TmpDrvnComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
