@@ -1,7 +1,7 @@
 import { AuthService } from './dashboard/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -16,6 +16,7 @@ import { ProfileComponent } from './dashboard/profile.component';
 import { LogsComponent } from './dashboard/logs.component';
 import { FormsComponent } from './forms/forms.component';
 import { TmpDrvnComponent } from './forms/tmp-drvn.component';
+import { RctvComponent } from './forms/rctv.component';
 
 
 @NgModule({
@@ -30,12 +31,14 @@ import { TmpDrvnComponent } from './forms/tmp-drvn.component';
     ProfileComponent,
     LogsComponent,
     FormsComponent,
-    TmpDrvnComponent
+    TmpDrvnComponent,
+    RctvComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

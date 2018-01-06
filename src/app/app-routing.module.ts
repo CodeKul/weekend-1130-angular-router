@@ -9,6 +9,7 @@ import { ErrorComponent } from './error/error.component'
 import { ForgetPasswordComponent } from './forget-password/forget-password.component'
 import { ProfileComponent } from './dashboard/profile.component';
 import { TmpDrvnComponent } from './forms/tmp-drvn.component';
+import { RctvComponent } from './forms/rctv.component';
 
 const routesDashboard: Routes = [
   { path: 'profile', component: ProfileComponent },
@@ -17,6 +18,7 @@ const routesDashboard: Routes = [
 
 const routesReg: Routes = [
   { path: 'regTmp', component: TmpDrvnComponent },
+  { path: 'regDt', component: RctvComponent }
 ]
 
 const routes: Routes = [
